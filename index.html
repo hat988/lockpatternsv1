@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Pattern Locks - Unique & Animated Lock Patterns</title>
+    <meta name="description" content="Discover 50+ unique and creative pattern locks with smooth animations. Weekly updated collection of visually appealing lock screen patterns.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="custom-preloader">
+    <svg class="custom-preloader-svg" viewBox="0 0 200 200">
+        <!-- Dots for the pattern lock -->
+        <circle cx="50" cy="50" r="8" class="custom-preloader-dot"></circle>
+        <circle cx="100" cy="50" r="8" class="custom-preloader-dot"></circle>
+        <circle cx="150" cy="50" r="8" class="custom-preloader-dot"></circle>
+        <circle cx="50" cy="100" r="8" class="custom-preloader-dot"></circle>
+        <circle cx="100" cy="100" r="8" class="custom-preloader-dot"></circle>
+        <circle cx="150" cy="100" r="8" class="custom-preloader-dot"></circle>
+        <circle cx="50" cy="150" r="8" class="custom-preloader-dot"></circle>
+        <circle cx="100" cy="150" r="8" class="custom-preloader-dot"></circle>
+        <circle cx="150" cy="150" r="8" class="custom-preloader-dot"></circle>
+        
+        <!-- A unique animated path (example: a continuous loop) -->
+        <path d="M50 50 L150 50 L150 150 L50 150 Z M100 50 L100 150" class="custom-preloader-line"></path>
+    </svg>
+</div>
+
+
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>🔐 Creative Pattern Locks</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#patterns">Patterns</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#author">Author</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Discover Unique Pattern Locks</h2>
+            <p>Explore our collection of 50+ creative and visually stunning pattern locks with smooth looped animations. Updated weekly with new designs!</p>
+            <a href="#patterns" class="cta-button">Explore Patterns</a>
+        </div>
+        <div class="hero-animation">
+            <svg class="hero-pattern-svg" viewBox="0 0 200 200">
+                <!-- Hero pattern dots -->
+                <circle cx="50" cy="50" r="6" class="hero-pattern-dot"></circle>
+                <circle cx="100" cy="50" r="6" class="hero-pattern-dot"></circle>
+                <circle cx="150" cy="50" r="6" class="hero-pattern-dot"></circle>
+                <circle cx="50" cy="100" r="6" class="hero-pattern-dot"></circle>
+                <circle cx="100" cy="100" r="6" class="hero-pattern-dot"></circle>
+                <circle cx="150" cy="100" r="6" class="hero-pattern-dot"></circle>
+                <circle cx="50" cy="150" r="6" class="hero-pattern-dot"></circle>
+                <circle cx="100" cy="150" r="6" class="hero-pattern-dot"></circle>
+                <circle cx="150" cy="150" r="6" class="hero-pattern-dot"></circle>
+                
+                <!-- Hero pattern lines -->
+                <g class="hero-pattern-path">
+                    <line x1="50" y1="50" x2="100" y2="50" class="hero-pattern-line" style="--animation-delay: 0s;"></line>
+                    <line x1="100" y1="50" x2="150" y2="50" class="hero-pattern-line" style="--animation-delay: 0.3s;"></line>
+                    <line x1="150" y1="50" x2="150" y2="100" class="hero-pattern-line" style="--animation-delay: 0.6s;"></line>
+                    <line x1="150" y1="100" x2="150" y2="150" class="hero-pattern-line" style="--animation-delay: 0.9s;"></line>
+                    <line x1="150" y1="150" x2="100" y2="150" class="hero-pattern-line" style="--animation-delay: 1.2s;"></line>
+                    <line x1="100" y1="150" x2="50" y2="150" class="hero-pattern-line" style="--animation-delay: 1.5s;"></line>
+                    <line x1="50" y1="150" x2="50" y2="100" class="hero-pattern-line" style="--animation-delay: 1.8s;"></line>
+                    <line x1="50" y1="100" x2="50" y2="50" class="hero-pattern-line" style="--animation-delay: 2.1s;"></line>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <main id="patterns">
+        <div class="search-filter-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search patterns..." />
+                <button id="search-button">🔍</button>
+            </div>
+            <div class="filter-container">
+                <select id="difficulty-filter">
+                    <option value="">All Difficulties</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+        
+        <section class="pattern-grid">
+            <!-- Patterns will be loaded here by JavaScript -->
+        </section>
+        <div class="pagination">
+            <!-- Pagination will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Creative Pattern Locks</h2>
+            <p>We specialize in creating unique, visually appealing pattern locks that combine security with artistic design. Our patterns feature smooth animations and are updated regularly to keep your lock screen fresh and exciting.</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>🎨 Creative Designs</h3>
+                    <p>Each pattern is carefully crafted to be both secure and visually stunning.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔄 Weekly Updates</h3>
+                    <p>New patterns added every week to keep your collection fresh.</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 Mobile Optimized</h3>
+                    <p>All patterns work perfectly on mobile devices and tablets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="author" id="author">
+        <div class="author-content">
+            <div class="author-card">
+                <div class="author-photo">
+                    <img src="author-photo.jpg" alt="Alex Johnson - Founder & Lead Designer" />
+                </div>
+                <div class="author-info">
+                    <h2>Meet the Creator</h2>
+                    <h3>Alex Johnson</h3>
+                    <p class="author-title">Founder & Lead Designer</p>
+                    <p class="author-bio">
+                        With over 8 years of experience in UI/UX design and mobile security, Alex founded Creative Pattern Locks to bridge the gap between security and aesthetics. A graduate of MIT with a degree in Computer Science, Alex has worked with leading tech companies before pursuing the passion for creating beautiful, secure pattern designs.
+                    </p>
+                    <p class="author-bio">
+                        When not designing new patterns, Alex enjoys photography, digital art, and exploring the latest trends in mobile interface design. The mission is simple: make security beautiful and accessible for everyone.
+                    </p>
+                    <div class="author-credentials">
+                        <div class="credential">
+                            <span class="credential-icon">🎓</span>
+                            <span>MIT Computer Science</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-icon">💼</span>
+                            <span>8+ Years Experience</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-icon">🏆</span>
+                            <span>UI/UX Design Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Creative Pattern Locks</h3>
+                <p>Your source for unique and creative pattern lock designs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#patterns">Patterns</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#author">Author</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@creativepatternlocks.com</p>
+                <p>Follow us for updates and new patterns!</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Creative Pattern Locks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="patterns.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
